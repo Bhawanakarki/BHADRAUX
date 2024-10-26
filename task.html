@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ 
+
+  <!-- Demo styles -->
+  <style>
+    .box {
+      background-color: black;
+      height: 800px;
+      color: white;
+    }
+
+    .text {
+      color: red;
+      font-size: 20px;
+      margin-left: 100px;
+      position: relative;
+      top: 7%;
+    }
+
+    .text1 {
+      color: white;
+      font-size: 20px;
+      margin-left: 135px;
+      position: relative;
+      top: 4%;
+    }
+
+    .text2 {
+      margin-left: 100px;
+      font-size: 20px;
+      position: relative;
+      top: 4%;
+    }
+
+    .text3 {
+      position: absolute;
+      margin-left: 800px;
+      top: 16%;
+      color: white;
+      font-size: 20px;
+
+    }
+
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:black;
+      margin: 0;
+      padding:0;
+
+
+    }
+
+    .swiper {
+      width: 1000px;
+      height: 300px;
+      margin-top: 90px;
+      border-radius: 20px;
+
+
+
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      color: black;
+      flex-direction: column;
+      /* transition: all 1s; */
+      /* transition-property: background-color; */
+      transition-duration: 1s;
+      transition-property: all;
+      /* transition-delay: 2s; */
+      /* transition-timing-function: ease; */
+      /* transition-timing-function: ease-in; */
+      /* transition-timing-function: ease; */
+        transition-timing-function:cubic-bezier(1, 0, 0, 1.19)
+
+    }
+
+    .swiper-slide img {
+      display: block;
+      width:90px;
+      
+
+    }
+    .swiper-slide:hover {
+      background-color: brown;
+      cursor: pointer;
+      font-size: 2rem;
+      /* cursor: help; */
+    }
+    
+
+    .content {
+      color: white;
+      margin-left: 290px;
+      position: relative;
+      top: 5px;
+
+
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="box">
+    <div class="text">01//</div>
+    <div class="text1">SERVICES</div>
+    <div class="text2">
+      <h1>OUR PHOTOGRAPHY <BR><em>Services</em></BR></h1>
+    </div>
+    <div class="text3">
+      <p>We're deeply passionate catch your lovely memories in cameras <br>
+        and convey your love for every moment of life as a whole.</p>
+    </div>
+
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://cdn-icons-png.freepik.com/256/6286/6286759.png?ga=GA1.1.1244648041.1718727446&semt=ais_hybrid"alt="">
+       <div> <span>01</span>
+        <p> Studio Photograpy</p></div>
+    </div> 
+     <div class="swiper-slide"><img src="https://cdn-icons-png.freepik.com/256/7052/7052271.png?ga=GA1.1.1244648041.1718727446&semt=ais_hybrid" alt="" >
+     <div><span>02</span>
+    <p>Outer Photography</p></div>
+    </div>
+       <div class="swiper-slide"><img src="https://cdn-icons-png.freepik.com/256/3650/3650485.png?ga=GA1.1.1244648041.1718727446&semt=ais_hybrid" alt="">
+      <div><span>03</span>
+        <p>Wildlife Photography</p></div></div>
+        <div class="swiper-slide"><img src="https://cdn-icons-png.freepik.com/256/16607/16607066.png?ga=GA1.1.1244648041.1718727446&semt=ais_hybrid" alt="">
+          <div><span>04</span>
+            <p>Photography Archive</p>
+          </div></div>
+
+      <div class="swiper-slide"><img src="https://cdn-icons-png.freepik.com/256/570/570946.png?ga=GA1.1.1244648041.1718727446&semt=ais_hybrid" alt="">
+       <div><span>05</span>
+      <p>Photography Traning</p></div></div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+
+  </div>
+  
+
+  
+ 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  </div>
+  </body>
+  </html>

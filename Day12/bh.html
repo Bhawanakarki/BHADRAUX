@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .box{
+      background-color: #151414;
+      height: 800px;
+    }
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 96%;
+      height: 500px;
+      margin-top: 5px;
+      margin-left: 20px;
+      color: white;
+      
+
+
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: rgb(31, 31, 31);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 15px;
+      color: white;
+    }
+
+    .direction{
+      display: flex;
+    }
+
+    .direction2{
+      display: flex;
+      justify-content: space-between;
+    }
+    .text1 {
+      color: red;
+      margin-left: 15px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .text2 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-left: 10px;
+      color: white;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .text3 {
+      font-family: cursive;
+      font-size: 45px;
+      margin-left: 10px;
+      color: white;
+    }
+    .text4{
+      margin-top: 60px;
+      color: white;
+      margin-right: 40px;
+      font-size: 18px ;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="direction">
+      <p class="text1">01//</p>
+      <p class="text2">SERVICES</p>
+    </div>
+    <div class="direction2">
+    <header class="title">Our Photography <br><p class="text3">Services</p>
+    </header>
+    <p class="text4">we’re deeply passionate <b>catch your lovely memories in cameras </b><br>and Convey your love for every moment of life as a whole.</p></pre>
+    
+    </div><pre>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">01 <br>Outdoor <br> Photography</div>
+        <div class="swiper-slide">02 <br>Photography <br> Training</div>
+        <div class="swiper-slide">03 <br> Photography <br> Archive</div>
+        <div class="swiper-slide">04 <br>Studio <br> Photography</div>
+        <div class="swiper-slide"> 06 <br>Wildlife <br> Photography</div>
+        <div class="swiper-slide"> 07 <br>Personal <br> Portfolio shoot</div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+
+    <!-- <div id="default-carousel" class="relative w-full" data-carousel="slide">
+   Carousel wrapper -->
+    <!-- <div class="relative h-56 overflow-hidden rounded-lg md:h-96"> -->
+    <!-- Item 1 -->
+    <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item> -->
+    <!-- <img src="../assets/image/camera.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
+    <!-- </div> -->
+    <!-- Item 2 -->
+    <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item> -->
+    <!-- <img src="../assets/image/camera.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div> -->
+    <!-- Item 3 -->
+    <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../assets/image/camera.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>      Item 4 -->
+    <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../assets/image/camera.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div> -->
+    <!-- Item 5 -->
+    <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../assets/image/camera.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div> -->
+    <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="../assets/image/camera.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+  </div> -->
+    <!-- Slider indicators -->
+    <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div> -->
+    <!-- Slider controls -->
+    <!-- <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path str

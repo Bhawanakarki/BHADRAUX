@@ -1,0 +1,60 @@
+
+.navbar {
+    display: flex;
+    justify-items: center;
+    color: white;
+}
+
+.navlist {
+    position: absolute;
+    top: 7%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 400px;
+
+}
+
+.imglist {
+    position: absolute;
+    left: 25px;
+    top: 6%;
+}
+
+
+
+
+
+.text {
+    position: absolute;
+    top: 25%;
+    color: white;
+    padding-left: 130px;
+}
+
+.text h1 {
+    position: relative;
+    top: 25%;
+    color: white;
+    padding-left: 8px;
+    font-size: 70px;
+    margin-top: 7px;
+  
+}
+
+.text p {
+    /* position: relative; */
+    padding-left: 10px;
+    font-size: 25px;
+    margin-top: -30px;
+ 
+}
+
+button {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}

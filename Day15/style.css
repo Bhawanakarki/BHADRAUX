@@ -1,0 +1,105 @@
+.box {
+    background-color: black;
+    height: 800px;
+    color: white;
+  }
+  
+  .list {
+    color: red;
+    font-size: 20px;
+    margin-left: 130px;
+    position: relative;
+    top: 11%;
+  }
+  
+  .list1 {
+    color: white;
+    position: relative;
+    top:2%;
+font-size: 20px;
+    margin-top: 50px;
+    margin-left: 170px;
+    
+  }
+  
+  .list2 h1
+   {
+    margin-left: 130px;
+    margin-top: 30px;
+    
+
+   
+  }
+  button{
+    background-color: rgb(237, 11, 11);
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 1200px;
+    position:absolute;
+    top: 19%;
+}
+button:hover{
+    background-color: white;
+    cursor:pointer;
+}
+
+    .img2{
+      
+        margin-top: 50px;
+        margin-left: 150px;
+        
+    }
+    .list3{
+        margin-left: 900px;
+        position: absolute;
+        top: 26%;
+       
+    }
+    .list4 p{
+        margin-left: 900px;
+        position: absolute;
+        top: 35%;
+        font-size: 25px;
+
+    }
+    .list5 {
+        margin-left: 900px;
+        position: absolute;
+        top: 50%;
+    font-size: 20px;
+
+    }
+    .list6 button{
+        
+            background-color: red;
+            border-radius: 200px;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            position: absolute;
+            top: 75%;
+           margin-left: 650px;
+           border-radius: none;
+           
+    }
+    
+        
+    
+    .list6 button:hover{
+        background-color:white;
+        cursor: pointer;
+    }
+   
+
+
+
+    
+  
+ 
+
+   
+  

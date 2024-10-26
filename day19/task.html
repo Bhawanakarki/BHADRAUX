@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .mainbox{
+            height: 50px;
+            width: 100%;
+            border-radius: 2rem;
+            background-color: gray;
+        }
+        .box{
+            height:50px;
+            width:50px;
+            border-radius:2rem;
+            background-color:gray;
+            position: relative;
+            /* top: 200px; */
+            color: white;
+            text-align: center;
+            align-content: center;
+            animation-name: movebox;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        }
+    
+            
+            
+    
+        @keyframes movebox {
+            0%{
+
+            background-color: blueviolet;
+            width: 0%;
+        }
+        25%{
+        
+            background-color: red;
+            width: 25%;
+          
+        }
+        50%{
+            background-color: pink;
+            width: 50%;
+           
+        }
+        75%{
+          
+            background-color: brown;
+            width: 75%;
+        }
+        100%{
+            background-color: black;
+            width: 100%;
+        }
+
+           
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+    <div class="box">
+    Loading...........
+
+    </div>
+    </div>
+</body>
+</html>
